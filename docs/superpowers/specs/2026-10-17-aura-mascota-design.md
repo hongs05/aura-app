@@ -247,8 +247,11 @@ actualizar en vez de fallar en silencio.
    `estado --json`, soltar videos, empaquetado y `/aura:mascota`.
 2. **Chat:** `VentanaAura` (chat y tarjetas de acción) y `charlar`.
 3. **Edición:** `editar` en `videoqa` y su interfaz en la ventana.
-4. **Extras:** corrector previo de textos (`revisar_texto`) y, según el programa de edición que
-   use, marcadores FCPXML para Premiere o Final Cut, o la lista detallada para CapCut.
+4. **Extras:** corrector previo de textos (`revisar_texto`) y la **lista de arreglos a mano para
+   CapCut**: cada punto con el segundo exacto (formato `mm:ss` como en la línea de tiempo de
+   CapCut), qué cambiar, el texto o color correcto listo para copiar y la foto del momento.
+   CapCut no importa marcadores y sus proyectos nuevos van cifrados, así que no hay exportación
+   de proyecto.
 
 ## 12. Fuera de alcance
 
@@ -258,8 +261,8 @@ actualizar en vez de fallar en silencio.
 - Windows (`videoqa-win` queda aparte).
 - Presupuesto mensual automático del juez (propuesto el 2026-10-17 y aplazado).
 
-## 13. Preguntas abiertas
+## 13. Preguntas resueltas
 
-- **¿Con qué programa edita ella?** Define el punto 4 de la fase 4.
-- **¿Subir `aura-app` a GitHub (privado) y con qué nombre?** Hace falta para que `/aura:mascota`
-  lo clone en su Mac.
+- **Programa de edición:** CapCut, que exporta MP4. La edición de Aura lee y escribe MP4
+  (H.264 + AAC), y los arreglos que no son automáticos se entregan como lista (fase 4).
+- **Repo:** `aura-app` en GitHub como repo privado. `/aura:mascota` lo clona en su Mac.
